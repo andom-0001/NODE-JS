@@ -13,6 +13,7 @@ const server = http.createServer((req, res) => {
     } else {
         res.write("404 page not found");
     }
+    res.end();
 });
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
