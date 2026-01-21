@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-fs.open("example.txt", "w", (err, fd) => {
+fs.open("read.txt", "w", (err, fd) => {
     if (err) {
         console.log("Error opening file:", err);
         return;
