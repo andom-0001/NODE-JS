@@ -27,7 +27,7 @@ async function readFileWithPromisify() {
         let filedata = await AnacondaRex("cb.txt", "utf-8");
         console.log("promisify file data", filedata);
     } catch (err) {
-        console.log("promisify file is loading error", err);
+        console.log(err);
     }
 }
 readFileWithPromisify();
