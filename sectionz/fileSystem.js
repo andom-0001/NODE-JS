@@ -10,10 +10,10 @@ fs.writeFile("cb.txt", "This is simple call_back file data", (err) => {
 
 async function readFileWithPromises() {
     try {
-        await fs.writeFile("promise.txt", "This is simple promise file data");
-        console.log("file is created with simple promise");
+        let data = await fs.readFile("cb.txt", "utf-8");
+        console.log("async file data", data);
     } catch (err) {
-        console.log("file is loading error", err);
+        console.log(" async file is loading error", err);
     }
 }
 
