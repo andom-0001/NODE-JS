@@ -34,3 +34,5 @@ app.post("/submit",(req,res)=>{
 app.listen(port, () => {
     console.log(`Server is running at ${port}`);
 });
+
+console.log(`http://localhost:${port}`);
